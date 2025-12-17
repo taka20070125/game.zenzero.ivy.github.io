@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ストーリーの説明</title>
+
+    <style>
+        /* ---- 背景 ---- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", "メイリオ", sans-serif;
+            color: #e6ffff;
+            text-align: center;
+            background: radial-gradient(circle at center, #001018 0%, #000 70%);
+        }
+
+        /* ---- 光るタイトル ---- */
+        h1 {
+            margin-top: 40px;
+            font-size: 2.6rem;
+            letter-spacing: 2px;
+            color: #aef;
+            text-shadow: 0 0 12px #0ff, 0 0 20px #0af;
+        }
+
+        /* ---- テキスト ---- */
+        p {
+            width: 90%;
+            max-width: 900px;
+            margin: 12px auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+        }
+
+        /* ---- 大きい画像（ホログラム風） ---- */
+        .big-image img {
+            width: 100%;
+            max-width: 1100px;
+            display: block;
+            margin: 35px auto;
+            border-radius: 8px;
+            box-shadow:
+                0 0 20px rgba(0,255,255,0.4),
+                0 0 60px rgba(0,200,255,0.2);
+            border: 1px solid rgba(0,255,255,0.3);
+        }
+
+        /* ---- ホログラムカード ---- */
+        .char-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 18px;
+            background: rgba(0, 40, 50, 0.4);
+            border: 1px solid rgba(0,255,255,0.3);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,255,255,0.2);
+            backdrop-filter: blur(4px);
+            color: #e0ffff;
+            transition: .35s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 0 30px rgba(0,255,255,0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 0 15px rgba(0,255,255,0.4);
+        }
+
+        .card h3 {
+            margin: 8px 0 6px;
+            font-size: 1.3rem;
+            text-shadow: 0 0 8px #0ff;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
+        /* ---- 戻るボタン ---- */
+        a {
+            display: inline-block;
+            margin: 50px auto 70px;
+            padding: 12px 26px;
+            background: rgba(0,200,255,0.18);
+            border: 1px solid #0af;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: .3s;
+            font-size: 1.1rem;
+        }
+
+        a:hover {
+            background: #0af;
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>ストーリーページ</h1>
+
+<ul>
+    <li>
+        『ゼンレスゾーンゼロ』は、「ホロウ」と呼ばれる謎の災害によって
+        世界が崩壊した後を描く物語です。ホロウ内部には常識外れの怪物が潜み、
+        軽い気持ちで踏み込めば命の危険すらあります。
+    </li>
+
+    <li>
+        人類が最後に辿り着いた安全な都市が「新エリー都」。
+        ホロウに囲まれながらもネオンが輝き、人々は夢や欲望を抱いて生き続ける、
+        危険と日常が隣り合わせのスリリングな街です。
+    </li>
+
+    <li>
+        主人公の兄妹は「プロキシ」と呼ばれる存在。
+        ホロウに挑む人々を導き、裏社会で流れる危険な依頼を仲介する
+        “案内人” のような仕事をしています。
+    </li>
+
+    <li>
+        兄妹は普通の人では引き受けない大胆な依頼をこなし、
+        仲間たちと共に幾度もホロウへ足を踏み入れていきます。
+    </li>
+
+    <li>
+        しかし、彼らが向き合うのは依頼だけではありません。
+        ホロウの奥深くには、世界を揺るがす巨大な謎と秘密が眠っています。
+    </li>
+
+    <li>
+        生存、陰謀、そして数々の出会いが交差する新エリー都。
+        その中心で、プレイヤーの選択が物語を大きく動かしていきます。
+    </li>
+</ul>
+
+
+<!-- ▼ 大きい画像 ▼ -->
+<div class="big-image">
+    <img src="https://sm.ign.com/ign_jp/screenshot/default/01_16d9.jpg" alt="Zenless Zone Zero ストーリー">
+</div>
+
+<a href="index.html">戻る</a>
+
+</body>
+</html>

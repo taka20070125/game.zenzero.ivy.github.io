@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゼンレスゾーンゼロ紹介カード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-transition"></div>
+
+<header>
+    <h1>WORKS GALLERY</h1>
+    <p>ゼンレスゾーンゼロ紹介</p>
+</header>
+
+<section class="works">
+
+    <div class="card">
+        <img src="https://img.gamewith.jp/article/thumbnail/rectangle/456185.png?date=1720210336" alt="ゼンゼロ ストーリー">
+        <h3>ストーリー</h3>
+        <p>ゼンゼロのメインストーリー攻略について、キャラ特性やボンプを活かし、回避と連携を重視して任務を進め、物語を効率よく楽しむ指針を紹介します。</p>
+        <a href="detail1.html" class="btn">詳細を見る</a>
+    </div>
+
+    <div class="card">
+        <img src="https://img.gamewith.jp/article/thumbnail/rectangle/452256.png" alt="ボンプ 画像">
+        <h3>サポートキャラ（ボンプ）</h3>
+        <p>ボンプはサポート用ロボットで、回復や補助攻撃、妨害などを自動で行い、味方が戦闘に集中できる環境を整える重要な存在です。</p>
+        <a href="detail2.html" class="btn">詳細を見る</a>
+    </div>
+<div class="card">
+    <div class="images">
+    <img src="https://img.game8.jp/9955750/6500940b1c2c4254e92a122da1dfdc75.jpeg/original" alt="ゼンゼロ 戦闘解説">
+</div>
+
+    <h3>戦闘</h3>
+    <p>一瞬の判断が勝敗を決めるスピード感あふれる戦闘。回避やパリィでチャンスを掴み、
+       キャラチェンジで叩き込む怒涛のコンボが、画面いっぱいに迫力のエフェクトを響かせます。</p>
+    <a href="detail3.html" class="btn">詳細を見る</a>
+</div>
+    <body>
+    <div class="particles"></div>
+        <!-- 光る粒子100個 정도 -->
+        <script>
+            for (let i = 0; i < 100; i++) {
+                const s = document.createElement("span");
+                s.style.left = Math.random() * 100 + "vw";
+                s.style.top = Math.random() * 100 + "vh";
+                document.querySelector(".particles").appendChild(s);
+            }
+        </script>
+    </body>
+</section>
+
+<script>
+document.addEventListener("click", function(e) {
+    const ripple = document.createElement("div");
+    ripple.className = "ripple";
+    ripple.style.left = `${e.clientX}px`;
+    ripple.style.top = `${e.clientY}px`;
+    document.body.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+});
+</script>
+
+<footer>
+    <p>© 2025 My Works Gallery</p>
+</footer>
+<script>
+const transition = document.querySelector(".page-transition");
+
+// ページ読み込み時フェードイン
+window.onload = () => {
+    transition.classList.remove("active");
+};
+
+// リンククリック時にフェードアウトしてから遷移
+document.addEventListener("click", e => {
+    const target = e.target.closest("a");
+    if (target && target.getAttribute("href") && !target.getAttribute("href").startsWith("#")) {
+        e.preventDefault();
+        transition.classList.add("active");
+        const url = target.getAttribute("href");
+        setTimeout(() => { window.location.href = url; }, 800);
+    }
+});
+</script>
+
+</body>
+
+</html>

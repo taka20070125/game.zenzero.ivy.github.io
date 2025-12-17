@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品詳細ページ</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* ==== 背景 ==== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", "メイリオ", sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #120400, #2b0b00, #000000);
+            background-attachment: fixed;
+        }
+
+        /* 光のライン効果 */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(120deg, rgba(255,120,0,0.15) 0%, rgba(255,255,255,0) 60%),
+                linear-gradient(300deg, rgba(255,80,0,0.12) 0%, rgba(0,0,0,0) 80%);
+            pointer-events: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 18px rgba(255,140,0,0.8);
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .big-image img {
+            width: 100%;
+            max-width: 1100px;
+            display: block;
+            margin: 25px auto;
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 0 40px rgba(255,120,0,0.7);
+        }
+
+        /* ---- キャラ紹介カード ---- */
+        .character-card {
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            padding: 25px 30px;
+            background: rgba(255, 120, 0, 0.15);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 140, 0, 0.45);
+            box-shadow: 0 0 20px rgba(255,120,0,0.25);
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .character-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 30px;
+            text-shadow: 0 0 10px rgba(255,100,0,0.7);
+        }
+
+        .character-card ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        /* 戻るボタン */
+        a {
+            display: block;
+            width: 220px;
+            margin: 50px auto;
+            padding: 14px;
+            background: rgba(255,100,0,0.55);
+            text-align: center;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            letter-spacing: 1px;
+        }
+        a:hover {
+            background: rgba(255,150,0,0.95);
+            box-shadow: 0 0 18px rgba(255,120,0,1);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+<h1>サポートキャラ（ボンプ）</h1>
+<p>ボンプ</p>
+
+<!-- ▼ 大きい画像 ▼ -->
+<!-- Bangboo GIF -->
+<div class="gif-area" style="text-align:center; margin-top:20px;">
+    <img src="https://media1.tenor.com/m/V_g8_3yr-lAAAAAd/bangboo-zenless-zone-zero.gif" 
+         alt="Bangboo Zenless Zone Zero GIF"
+         style="max-width:400px; width:100%; height:auto;">
+</div>
+
+
+
+<!-- ▼ キャラ紹介カード ▼ -->
+<div class="character-card">
+<style>
+.bangboo-card {
+    max-width: 700px;
+    margin: 24px auto;
+    padding: 22px 24px;
+    background: rgba(0, 255, 255, 0.08);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(0,255,255,0.25);
+    line-height: 1.9;
+}
+
+/* タイトル */
+.bangboo-card h3 {
+    margin: 0 0 18px;
+    text-align: center;
+    font-size: 24px;
+    color: #00eaff;
+    text-shadow: 0 0 10px rgba(0,255,255,0.7);
+}
+
+/* リスト */
+.bangboo-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.bangboo-card li {
+    margin-bottom: 16px;
+    font-size: 17px;
+}
+
+/* スマホ用 微調整 */
+@media (max-width: 480px) {
+    .bangboo-card {
+        padding: 20px;
+    }
+    .bangboo-card h3 {
+        font-size: 26px;
+    }
+    .bangboo-card li {
+        font-size: 18px;
+    }
+}
+</style>
+
+<div class="bangboo-card">
+    <h3>ボンプ｜キャラクター紹介</h3>
+
+    <ul>
+        <li>
+            <strong>基本役割：</strong>
+            ボンプは、プレイヤーを常にサポートしてくれる頼もしい補助型キャラクター。
+            戦闘状況を素早く分析し、仲間が危険に陥らないよう支援します。
+        </li>
+
+        <li>
+            <strong>防御サポート：</strong>
+            「シールド展開」により、味方の受けるダメージを一定時間大きく軽減。
+            激しい戦闘でも前線を安定させます。
+        </li>
+
+        <li>
+            <strong>攻撃サポート：</strong>
+            「エネルギーパルス」を発生させ、味方の攻撃力を上昇。
+            一気に火力を高め、チャンスを作り出します。
+        </li>
+
+        <li>
+            <strong>総合評価：</strong>
+            高い耐久力と優秀な補助能力を兼ね備え、
+            チーム全体の安定感を底上げする重要な存在です。
+        </li>
+
+        <li>
+            <strong>役割：</strong>
+            サポート / 防御補助
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+<a href="index.html">戻る</a>
+
+</body>
+</html>
